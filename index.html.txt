@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Layer 1 -->
+<div id="loginScreen" class="screen active">
+
+    <h1>❤️ A Special Surprise Awaits ❤️</h1>
+
+    <input type="password"
+           id="password"
+           placeholder="Enter Our Secret Date">
+
+    <button onclick="unlock()">Unlock My Heart</button>
+
+</div>
+
+<!-- Layer 2 -->
+
+<div id="letterScreen" class="screen">
+
+    <div class="letter">
+
+        <h1>Happy Birthday My Love ❤️</h1>
+
+        <p id="typewriter"></p>
+
+        <button onclick="showGarden()">
+            Walk Through Our Memories 🌹
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Layer 3 -->
+
+<div id="gardenScreen" class="screen">
+
+    <h1>Our Love Garden 🌹</h1>
+
+    <div class="tree">
+
+        <div class="rose rose1"
+             onclick="showMemory(0)">🌹</div>
+
+        <div class="rose rose2"
+             onclick="showMemory(1)">🌹</div>
+
+        <div class="rose rose3"
+             onclick="showMemory(2)">🌹</div>
+
+        <div class="rose rose4"
+             onclick="showMemory(3)">🌹</div>
+
+        <div class="rose rose5"
+             onclick="showMemory(4)">🌹</div>
+
+        <div class="rose rose6"
+             onclick="showMemory(5)">🌹</div>
+
+    </div>
+
+</div>
+
+<!-- Memory Popup -->
+
+<div id="memoryPopup">
+
+    <span onclick="closeMemory()"
+          class="close">✖</span>
+
+    <img id="memoryImage">
+
+    <h2 id="memoryTitle"></h2>
+
+    <p id="memoryText"></p>
+
+</div>
+
+<audio autoplay loop>
+    <source src="music/our-song.mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
